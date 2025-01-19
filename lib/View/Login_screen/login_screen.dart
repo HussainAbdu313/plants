@@ -1,8 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:plants/constants.dart';
 
-class LoginScreen extends StatelessWidget {
+class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
+
+  @override
+  State<LoginScreen> createState() => _LoginScreenState();
+}
+
+class _LoginScreenState extends State<LoginScreen> {
+  int selectedIndex = 0;
+
+  void onItemTapped(int index) {
+    setState(() {
+      selectedIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +38,26 @@ class LoginScreen extends StatelessWidget {
             child: Icon(Icons.notification_add,size: 30,),
           )
         ],
+      ),
+
+      bottomNavigationBar: BottomNavigationBar(
+    items: <BottomNavigationBarItem>[
+        BottomNavigationBarItem(
+        icon: Icon(Icons.home),
+          label: "Home",
+        ),
+      BottomNavigationBarItem(
+        icon: Icon(Icons.shopping_cart),
+        label: "Order List",
+      ),
+      BottomNavigationBarItem(
+        icon: Icon(Icons.person),
+        label: "Account",
+      ),
+    ],
+        currentIndex: selectedIndex,
+        selectedItemColor: Constants.primaryColor,
+        onTap: onItemTapped,
       ),
 
       // # 2 Name
