@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:plants/Ui/onboarding_screen_two.dart';
-import 'package:plants/View/Login_screen/login_screen.dart';
+import 'package:plants/View/Home_screen/home_screen.dart';
+import 'package:plants/Widgets/bottom_nav_bar.dart';
+
 import 'package:plants/constants.dart';
 
 class OnboardingScreenOne extends StatefulWidget {
@@ -25,7 +27,7 @@ class _OnboardingScreenOneState extends State<OnboardingScreenOne> {
               onTap: (){
                 Navigator.pushReplacement(
                     context, MaterialPageRoute(
-                    builder: (context) => LoginScreen()));
+                    builder: (context) => BottomNavBar()));
               },
               child: Text(
                 'Skip',
