@@ -4,29 +4,42 @@ class DummyDatabase {
 
     // # 1
     {
-      "image id": "assets/Images/Indoor Plants 01.jpg",
-      "name": "Fiddle Leaf Fig",
-      "price": 49.99,
+      "image id": "assets/Plants/Areca plam.png",
+      "name": "Areca Plam Plant",
+      "price": 700,
       "description": "The fiddle-leaf fig is a small tropical tree and broadleaf evergreen, commonly grown and popular as a houseplant in many areas of the United States. As a houseplant, it will grow 2 to 10 feet tall. It has large, broad, lyre-shaped, green leaves that can measure up to 18 inches long.",
 
     },
+
     // # 2
+
     {
-      "image id": "assets/Images/Indoor Plants 04.jpg",
-      "name": "Snake Plant",
-      "price": 29.99,
+      "image id": "assets/Plants/Money plant.jpg",
+      "name": "Money Plant",
+      "price": 400,
       "description": "It has web-like underground roots and thick, sword-shaped leaves with a unique banded pattern. It can flower once a year, producing clusters of cream-coloured flowers, that may develop into small orange fruits.",
 
     },
 
     // # 3
+
     {
-      "image id": "assets/Images/Indoor Plants 03.jpg",
-      "name": "Peace Lily",
-      "price": 39.99,
+      "image id": "assets/Plants/ZZplant.jpg",
+      "name": "Zz Plants",
+      "price": 500,
       "description": "Peace lilies are sturdy, easy to grow plants with glossy, dark green oval leaves that narrow to a point. The leaves rise directly from the soil. These plants also periodically produce lightly fragrant white flowers that resemble calla lilies. The long-lasting, pure white flowers will turn a pale green as they age..",
 
     },
+
+    // # 4
+
+    {
+      "image id":"assets/Plants/Snake plant.jpeg",
+      "name":"Snake Plant",
+      "price":800,
+      "description":"",
+    }
+
     //
   ];
 
